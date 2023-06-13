@@ -1,10 +1,50 @@
-
 body {
+    background: #2E2E37;
+}
 
+header {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 0px;
+    gap: 25px;
+
+    position: relative;
+    width: 100%;
+
+    background: #2E2E37;
+}
+
+#logo {
+    width: 740px;
+    height: 50px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 #logo path {
-    fill: black;
+    fill: white;
+}
+
+#logo ::after {
+    height: 5px;
+    
+    background: linear-gradient(180deg, rgba(26, 26, 33, 0.5) 0%, rgba(26, 26, 33, 0) 100%);
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 * {
