@@ -75,7 +75,7 @@ h2 {
 	text-align: center;
 	leading-trim: both;
 	text-edge: cap;
-	font-size: 2vw;
+	font-size: 3vw;
 	font-family: Dela Gothic One;
 	text-transform: lowercase;
 }
@@ -86,7 +86,7 @@ h3 {
 	text-align: center;
 	leading-trim: both;
 	text-edge: cap;
-	font-size: 1vw;
+	font-size: 2vw;
 	font-family: Dela Gothic One;
 	text-transform: lowercase;
 }
