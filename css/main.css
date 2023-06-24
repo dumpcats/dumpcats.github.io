@@ -1,42 +1,62 @@
+:root {
+	--black: #000;
+	--gray: #595959;
+	--white: #FFF;
+}
+
+@font-face {
+	font-family: 'Dela Gothic One';
+	src: url('dela gothic one/font.ttf');
+}
+
 body {
-    background: #2E2E37;
+    background: var(--black);
+	position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
 }
 
 header {
-    /* Auto layout */
-
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px 0px;
-    gap: 0px;
-
-    position: relative;
-    max-width: 100%;
-    width: 100%;
-
-    background: #2E2E37;
-    box-shadow: 0px 5px 5px rgba(26, 26, 33, 0.5);
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1vw;
 }
 
-#logo {
-    width: auto;
-    height: 50px;
-	margin-left: 50px;
-    margin-right: 50px;
-	
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+h1 {
+	color: var(--white);
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-size: 7vw;
+	font-family: Dela Gothic One;
+	letter-spacing: 0.5vw;
+	text-transform: uppercase;
 }
 
-#logo path {
-    fill: white;
+p {
+	color: var(--gray);
+	text-align: center;
+	leading-trim: both;
+	text-edge: cap;
+	font-size: 2vw;
+	font-family: Dela Gothic One;
+	text-transform: lowercase;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+	
+	/* Unselectable */
+	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	 user-select: none;
 }
