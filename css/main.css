@@ -25,44 +25,56 @@ body::-webkit-scrollbar {
 	width: 0 !important
 }
 
-header {
-    background: var(--black);
+.page {
+	min-height: 100vh;
 	
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+header {
+    background: var(--black);
+	
 	gap: 1vw;
 }
 
 main {
 	background: var(--white);
 	
+	
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+main span {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1vw;
+	align-content: flex-start;
+	gap: 40px;
+	flex-wrap: wrap;
 }
 
-.page {
-	width: 100%;
-	height: 100vh;
+img {
+	width: 256px;
+	height: 256px;
+	flex-shrink: 0;
+	
+	border-radius: 999px;
 }
 
-header h1 {
-	color: var(--white);
-}
-
-main h1 {
-	color: var(--black);
+a {
+	border-radius: 999px;
 }
 
 h1 {
+	color: var(--white);
 	
 	text-align: center;
-	leading-trim: both;
-	text-edge: cap;
 	font-size: 7vw;
 	font-family: Dela Gothic One;
 	letter-spacing: 0.5vw;
@@ -73,19 +85,6 @@ h2 {
 	color: var(--gray);
 	
 	text-align: center;
-	leading-trim: both;
-	text-edge: cap;
-	font-size: 3vw;
-	font-family: Dela Gothic One;
-	text-transform: lowercase;
-}
-
-h3 {
-	color: var(--gray);
-	
-	text-align: center;
-	leading-trim: both;
-	text-edge: cap;
 	font-size: 2vw;
 	font-family: Dela Gothic One;
 	text-transform: lowercase;
@@ -101,6 +100,4 @@ h3 {
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	 user-select: none;
-	 
-	
 }
