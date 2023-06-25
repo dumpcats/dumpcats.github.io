@@ -9,6 +9,11 @@
 	src: url('dela gothic one/font.ttf');
 }
 
+@font-face {
+	font-family: 'Inter';
+	src: url('inter/font.ttf');
+}
+
 html {
 	overflow: scroll;
 	overflow: -moz-scrollbars-none;
@@ -86,7 +91,9 @@ h2 {
 	
 	text-align: center;
 	font-size: 2vw;
-	font-family: Dela Gothic One;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
 	text-transform: lowercase;
 }
 
