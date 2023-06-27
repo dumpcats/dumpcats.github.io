@@ -45,6 +45,7 @@
 </script>
 
 <body>
+	<div style="display: block" id="hide">&nbsp;</div>
 	<header class="page">
 		<h1>dump<wbr>cats</h1>
 		<h2>ordinary kittens love bebra</h2>
@@ -56,5 +57,16 @@
 			<a href="ani" class="pfp">	<s></s><img src="ani/ava.png"></a>
 		</span>
 	</main>
+	<script type="text/javascript">
+		document.getElementById("hide").style.display = "block";
+		
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
+		
+		window.onload = function() {
+			document.getElementById("hide").style.display = "none"; 
+		}
+	</script>
 </body>
 </html>
