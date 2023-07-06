@@ -34,6 +34,11 @@ footer .footerSection {
 	text-decoration: none;
 }
 
+footer svg {
+	width: 30px;
+	height: auto;
+}
+
 footer p {
 	color: var(--gray);
 	font-size: 12px;
