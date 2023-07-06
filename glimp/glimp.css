@@ -2,6 +2,9 @@
 	--black: #000;
 	--gray: #595959;
 	--white: #FFF;
+	
+	--green: #769258;
+	--moody: #BDCCC5;
 }
 
 /* Шрифты */
@@ -25,7 +28,7 @@
    right: 0px;
    top: 0px;
    bottom: 0px;
-   background-color: var(--black);
+   background-color: var(--moody);
    z-index: 99; /* Higher than anything else in the document */
  }
  
@@ -49,7 +52,7 @@ header {
 }
 
 header h1 {
-	color: var(--white);
+	color: var(--green);
 	
 	text-align: center;
 	font-size: calc(5vw + 28px);
