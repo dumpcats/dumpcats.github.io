@@ -1,0 +1,53 @@
+/*/// FOOTER CSS ///*/
+
+:root {
+	--black: #000;
+	--gray: #595959;
+	--white: #FFF;
+}
+
+footer {
+	background: var(--black);
+	
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+	gap: 20px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+	
+	/* Unselectable */
+	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	 user-select: none;
+}
+
+footer .footerSection {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	
+	text-decoration: none;
+}
+
+footer p {
+	color: var(--gray);
+	font-size: 12px;
+	font-family: Dela Gothic One;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-bottom: 2px;
+}
+
+footer a:-webkit-any-link {
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+}

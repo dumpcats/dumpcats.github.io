@@ -1,26 +1,22 @@
-/*/// MAIN PAGE CSS FILE ///*/
-
-/*/// COLORS ///*/
-
 :root {
 	--black: #000;
 	--gray: #595959;
 	--white: #FFF;
 }
 
-/*/// FONTS ///*/
+/* Шрифты */
 
 @font-face {
 	font-family: 'Dela Gothic One';
-	src: url('dela gothic one/font.ttf');
+	src: url('../css/dela gothic one/font.ttf');
 }
 
 @font-face {
 	font-family: 'Inter';
-	src: url('inter/font.ttf');
+	src: url('../css/inter/font.ttf');
 }
 
-/*/// LOADER ///*/
+/* Прятает все при запуске */
 
 #hide
  {
@@ -33,10 +29,12 @@
    z-index: 99; /* Higher than anything else in the document */
  }
  
-/*/// HEADER ///*/
+/* 1 лист - заголовок */
 
 header {
-    background: var(--black);
+	background-image: url(header.webp);
+	background-size: cover;
+	background-position: center center;
 	
 	min-height: 100vh;
 	padding: 60px 40px;
@@ -69,7 +67,7 @@ header h1 {
 }
 
 header h2 {
-	color: var(--gray);
+	color: var(--white);
 	
 	padding-top: 1vw;
 	
@@ -81,14 +79,13 @@ header h2 {
 	text-transform: lowercase;
 }
 
-/*/// MAIN ///*/
+/* 2 лист - авы */
 
 main {
 	background: var(--white);
 	
 	min-height: 100vh;
 	padding: 60px 40px;
-	box-sizing:border-box;
 	
 	display: flex;
 	flex-direction: column;
@@ -206,8 +203,6 @@ main span {
 	}
 }
 
-/*/// OTHER ///*/
-
 body::-webkit-scrollbar {
 	
 	width: 0 !important
@@ -219,6 +214,10 @@ html, body {
 }
 
 * {
+	
+	
+    margin: 0px;
+    padding: 0px;
 	
 	/* Unselectable */
 	
