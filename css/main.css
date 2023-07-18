@@ -36,7 +36,7 @@
 /*/// HEADER ///*/
 
 header {
-    background: var(--black);
+	background: var(--black);
 	
 	min-height: 100vh;
 	padding: 60px 40px;
@@ -50,35 +50,66 @@ header {
 	overflow: hidden;
 }
 
+
+header * {
+	transition: all 0.1s ease-out;
+}
+	
+
 header h1 {
 	color: var(--white);
 	
 	text-align: center;
-	font-size: calc(5vw + 28px);
 	font-family: Dela Gothic One;
-	letter-spacing: 0.5vw;
-	text-transform: uppercase;
 	
-	transition: all 0.1s ease-out;
-}
-
-@media (max-width:450px){
-	header h1 {
-		font-size: calc(4vw + 14px);
-	}
+	font-size: 128px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 12.8px;
+	text-transform: uppercase;
 }
 
 header h2 {
 	color: var(--gray);
 	
-	padding-top: 1vw;
-	
 	text-align: center;
-	font-size: calc(2vw + 8px);
 	font-family: Inter;
+	
+	font-size: 40px;
 	font-style: normal;
-	font-weight: 500;
-	text-transform: lowercase;
+	font-weight: 600;
+	line-height: normal;
+}
+
+@media (max-width:1200px){
+	header {
+		padding: 30px 20px;
+	}
+	
+	header h1 {
+	font-size: 64px;
+	letter-spacing: 6.4px;
+	}
+	
+	header h2 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width:600px){
+	header {
+		padding: 15px 10px;
+	}
+	
+	header h1 {
+	font-size: 32px;
+	letter-spacing: 3.2px;
+	}
+	
+	header h2 {
+		font-size: 20px;
+	}
 }
 
 /*/// MAIN ///*/
