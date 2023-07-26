@@ -1,11 +1,11 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M256 0H0V256H256V0Z" fill="black"/>
-<path d="M128 64H160V96H128V64Z" fill="#656B71"/>
-<path d="M64 96H96V128H64V96Z" fill="#656B71"/>
-<path d="M64 160H32V192H64V160Z" fill="#656B71"/>
-<path d="M96 224H64V256H96V224Z" fill="#656B71"/>
-<path d="M256 96H224V128H256V96Z" fill="#656B71"/>
-<path d="M128 32H160V64H128V32Z" fill="white"/>
-<path d="M96 96H160V64H192V96H224V128H256V256H96V224H32V192H64V128H96V96Z" fill="white"/>
-<path d="M96 96V64H64V96H96Z" fill="white"/>
+<path d="M256 0H0V256H256V0Z" fill="#050505"/>
+<path d="M128 64H160V96H128V64Z" fill="#7A7D7F"/>
+<path d="M64 96H96V128H64V96Z" fill="#7A7D7F"/>
+<path d="M64 160H32V192H64V160Z" fill="#7A7D7F"/>
+<path d="M96 224H64V256H96V224Z" fill="#7A7D7F"/>
+<path d="M256 96H224V128H256V96Z" fill="#7A7D7F"/>
+<path d="M128 32H160V64H128V32Z" fill="#fafafa"/>
+<path d="M96 96H160V64H192V96H224V128H256V256H96V224H32V192H64V128H96V96Z" fill="#fafafa"/>
+<path d="M96 96V64H64V96H96Z" fill="#fafafa"/>
 </svg>

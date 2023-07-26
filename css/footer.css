@@ -1,9 +1,15 @@
 /*/// FOOTER CSS ///*/
 
 :root {
-	--black: #000;
-	--gray: #595959;
-	--white: #FFF;
+	/* --black: #000; */
+	/* --mgray: #595959; */
+	/* --white: #FFF; */
+	
+	--black: #050505;
+	--dgray: #1a1a19;
+	--mgray: #7A7D7F;
+	--lgray: #bbbab9;
+	--white: #fafafa;
 }
 
 footer {
@@ -41,7 +47,7 @@ footer svg {
 }
 
 footer p {
-	color: var(--gray);
+	color: var(--mgray);
 	font-size: 12px;
 	font-family: Dela Gothic One;
 	font-style: normal;
