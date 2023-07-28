@@ -21,25 +21,86 @@
 	right: 0px;
 	top: 0px;
 	bottom: 0px;
-	background-color: var(--moody);
+	background-color: var(--background);
 	z-index: 99; /* Higher than anything else in the document */
  }
  
+ 
+ 
+main {
+	display: flex;
+	padding: 32px;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+	
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+@media (max-width:1200px){
+	main {
+		display: flex;
+		padding: 32px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+	}
+}
+
+section {
+	max-width: 512px;
+	flex: 1 0 0;
+	align-self: stretch;
+	
+	/* background: linear-gradient(180deg, #CEB0B0 0%, #EFA0A0 100%); */
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 18px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 18px;
+	row-gap: 18px;
+	flex-wrap: wrap;
+	
+	/* Unselectable */
+	
+	/* -moz-user-select: none; */
+	/* -khtml-user-select: none; */
+	/* -webkit-user-select: none; */
+	 /* user-select: none; */
+}
+
+.footerSection {
+	display: inline-flex;
+	align-items: center;
+	gap: 9px;
+}
+
+.footerSection p {
+	text-transform: uppercase;
+}
+ 
 /* TEXT (made using https://gridlover.net) */
 
-html, .root {
+html{
 	color: var(--text);
 	
 	font-size: 18px;
 	line-height: 18px;
 }
 
-html, .root::-moz-selection{
+html::-moz-selection{
 	color: var(--background);
 	background-color: var(--primary);
 }
 
-html, .root::selection{
+html::selection{
 	color: var(--background);
 	background-color: var(--primary);
 }
@@ -49,7 +110,7 @@ body, .article {
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1rem;
-	max-width: 560px;
+	
 	margin: auto;
 }
 h1, .h1 {
@@ -91,13 +152,35 @@ ul ul, ol ol, ul ol, ol ul {
 	margin-bottom: 0rem;
 }
 
-/* Let's make sure all's aligned */
+/* хз */
+
+ul {
+  list-style: none;
+}
+li {
+  text-indent: -1em;
+}
+
+li:before {
+  content: "- ";
+  
+  -moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	 user-select: none;
+}
+
+/*    */
+
+mark {
+	color: var(--text);
+	background-color: var(--secondary);
+}
+
 hr, .hr {
 	border: 1px solid;
 	margin: -1px 0;
 }
-
-/* ADDED */
 
 a {
 	font-weight: 700;
@@ -107,8 +190,6 @@ a {
 b, strong {
 	font-weight: 700;
 }
-
-/* END OF ADDED*/
 
 a, b, i, strong, em, small, code {
 	line-height: 0;
@@ -130,26 +211,28 @@ body::-webkit-scrollbar {
 }
 
 html, body {
-	background-color: var(--background)
+	background-color: var(--background);
 	
 	min-height: 100vh;
 	width: 100vw;
 	overflow-x: hidden;
+	
+	margin: 0px;
+    padding: 0px;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-	
 	/* Unselectable */
 	
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	 user-select: none;
+	/* -moz-user-select: none; */
+	/* -khtml-user-select: none; */
+	/* -webkit-user-select: none; */
+	 /* user-select: none; */
 	 
 	/* No Scrollbar*/
 	
 	overflow: -moz-scrollbars-none;
 	-ms-overflow-style: none;
+	
+	box-sizing:border-box;
 }

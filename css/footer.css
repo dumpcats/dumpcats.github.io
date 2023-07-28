@@ -12,6 +12,13 @@
 	--white: #fafafa;
 }
 
+/*/// FONTS ///*/
+
+@font-face {
+	font-family: 'Dela Gothic One';
+	src: url('dela gothic one/font.ttf');
+}
+
 footer {
 	background: var(--black);
 	
