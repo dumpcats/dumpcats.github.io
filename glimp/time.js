@@ -1,11 +1,11 @@
+document.getElementById("hide").style.display="block",window.onbeforeunload=function(){window.scrollTo(0,0)},window.onload=function(){document.getElementById("hide").style.display="none"};
+
+document.addEventListener("visibilitychange",(event)=>{if(document.visibilityState=="visible"){document.title="glimpixels";}else{document.title="glimpixels - waiting YOU";}});
+
 var span = document.getElementById('time');
-var o = new Date().getTimezoneOffset();
 
 function time() {
   var d = new Date();
-  // console.log(d);
-  // d.setDate(d.getDate);
-  // console.log(d);
   var s = d.getUTCSeconds();
   var m = d.getUTCMinutes();
   var h = d.getUTCHours() + 7;
