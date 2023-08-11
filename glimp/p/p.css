@@ -1,0 +1,283 @@
+:root {
+	--text: #F1F4F8;
+	--background: #030507;
+	--primary: #306CFF;
+	--secondary: #001733;
+	--accent: #FF2F4A;
+}
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* Anonymous Pro, monospace */
+
+
+
+/* ON LOAD */
+
+#hide {
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background-color: var(--background);
+	pointer-events: none;
+	z-index: 99; /* Higher than anything else in the document */
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 18px;
+	margin-bottom: 32px;
+}
+
+section  > .container:last-child {
+  margin-bottom: 0;
+}
+
+.wb {
+	position: fixed;
+	width: 430px;
+	height: 500px;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.w1 {
+	content: url(../img/w1.svg);
+	top: 0;
+	left: 25%;
+}
+
+.w2 {
+	content: url(../img/w2.svg);
+	bottom: 0;
+	right: 25%;
+}
+ 
+main {
+	display: flex;
+	padding: 32px;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+	
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+@media (max-width:1200px){
+	main {
+		display: flex;
+		padding: 32px;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		gap: 32px;
+		width: 100vw;
+	}
+}
+
+section {
+	max-width: 512px;
+	flex: 1 0 0;
+	align-self: stretch;
+	z-index: 1;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 18px;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 18px;
+	row-gap: 18px;
+	flex-wrap: wrap;
+}
+
+.footerSection {
+	display: inline-flex;
+	align-items: center;
+	gap: 9px;
+}
+
+.footerSection p {
+	text-transform: uppercase;
+}
+ 
+/* TEXT (made using https://gridlover.net) */
+
+html{
+	color: var(--text);
+	
+	font-size: 18px;
+	line-height: 18px;
+}
+
+html::-moz-selection{
+	color: var(--background);
+	background-color: var(--primary);
+}
+
+html::selection{
+	color: var(--background);
+	background-color: var(--primary);
+}
+
+body, .article {
+	font-family: 'Anonymous Pro', monospace;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1rem;
+	
+	margin: auto;
+}
+h1, .h1 {
+	font-size: 1.9444444rem;
+	line-height: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+h2, .h2 {
+	font-size: 1.5555556rem;
+	line-height: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+h3, .h3 {
+	font-size: 1.2777778rem;
+	line-height: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 0rem;
+}
+h4, .h4 {
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 0rem;
+}
+h5, .h5 {
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 0rem;
+}
+p, ul, ol, pre, table, blockquote {
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+}
+
+/* хз */
+
+ul {
+  list-style: none;
+}
+li {
+  text-indent: -1em;
+}
+
+.ic {
+	height: 1rem;
+}
+
+.tg:before {
+	 content: url(img/tg.svg);
+}
+
+.pn:before {
+	 content: url(img/pn.svg);
+}
+
+.tb:before {
+	 content: url(img/tb.svg);
+}
+
+.tw:before {
+	 content: url(img/tw.svg);
+}
+
+li:before {
+  content: "- ";
+  
+  -moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	 user-select: none;
+}
+
+/*    */
+
+mark {
+	color: var(--primary);
+	background: none;
+}
+
+hr, .hr {
+	border: 1px solid;
+	margin: -1px 0;
+}
+
+a {
+	font-weight: 700;
+	color: var(--text);
+	text-decoration: none;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+a, b, i, strong, em, small, code {
+	line-height: 0;
+}
+sub, sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+
+body::-webkit-scrollbar {
+	width: 0 !important
+}
+
+html, body {
+	background-color: var(--background);
+	
+	min-height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	
+	margin: 0px;
+    padding: 0px;
+}
+
+* {
+	/* Unselectable */
+	
+	/* -moz-user-select: none; */
+	/* -khtml-user-select: none; */
+	/* -webkit-user-select: none; */
+	 /* user-select: none; */
+	 
+	/* No Scrollbar*/
+	
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+	
+	box-sizing:border-box;
+}
